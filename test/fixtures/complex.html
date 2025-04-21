@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complex Test Page</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .container { max-width: 800px; margin: 0 auto; }
+    .highlight { background-color: yellow; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Complex HTML Test Page</h1>
+      <nav>
+        <ul>
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="section1">
+        <h2>Section 1</h2>
+        <p>This section contains <span class="highlight">highlighted</span> text and a <code>code block</code>.</p>
+        <pre><code>function test() {
+  console.log("Hello, world!");
+}</code></pre>
+      </section>
+
+      <section id="section2">
+        <h2>Section 2</h2>
+        <p>This section contains a form and some JavaScript.</p>
+        <form id="test-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      // This is a test script
+      document.getElementById('test-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Form submitted!');
+      });
+    </script>
+
+    <footer>
+      <p>&copy; 2024 Test Page</p>
+    </footer>
+  </div>
+</body>
+</html> 
